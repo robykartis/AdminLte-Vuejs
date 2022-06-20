@@ -22,7 +22,7 @@
           />
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          <a href="#" class="d-block">Roby DEV</a>
         </div>
       </div>
 
@@ -49,7 +49,24 @@
           role="menu"
           data-accordion="false"
         >
-          <NavItem icon="fa fa-home" link="/"> Home </NavItem>
+          <NavItem icon="fa fa-home" link="/"> Dashboard </NavItem>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Pages
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <NavItem link="/">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sample Home</p>
+                </NavItem>
+              </li>
+            </ul>
+          </li>
           <NavItem icon="fa fa-info-circle" link="/about"> About </NavItem>
           <NavItem icon="nav-icon fas fa-edit" link="/posts">Post </NavItem>
           <NavItem icon="nav-icon fas fa-edit" link="/posts-detail"

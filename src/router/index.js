@@ -2,15 +2,13 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import MainLayouts from "../layouts/MainLayouts.vue";
 // Auth
-import LoginView from '../views/auth/LoginView.vue'
+import LoginView from "../views/auth/LoginView.vue";
 // Admin
 import DashboarView from "../views/admin/DashboarView.vue";
-import AboutView from '../views/admin/AboutView.vue'
+import AboutView from "../views/admin/AboutView.vue";
+import ContactMe from "../views/admin/ContactMe.vue";
 import PostsIndex from "../views/admin/post/PostsIndex.vue";
 import PostsDetail from "../views/admin/post/PostsDetail.vue";
-
-
-
 
 const routes = [
   {
@@ -26,6 +24,11 @@ const routes = [
         path: "about",
         name: "aboutView",
         component: AboutView,
+      },
+      {
+        path: "contact",
+        name: "contactMe",
+        component: ContactMe,
       },
 
       {
@@ -44,7 +47,7 @@ const routes = [
         name: "home",
         component: HomeView,
       },
-    
+
       // {
       //   path: "about",
       //   name: "about",
@@ -59,10 +62,10 @@ const routes = [
     ],
   },
   {
-    path:'/login',
-    name: 'login',
+    path: "/login",
+    name: "loginView",
     component: LoginView,
-  }
+  },
 ];
 
 const router = createRouter({
