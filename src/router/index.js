@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import MainLayouts from "../layouts/MainLayouts.vue";
 // Auth
 import LoginView from "../views/auth/LoginView.vue";
+import RegisterView from "../views/auth/RegisterView.vue";
 // Admin
 import DashboarView from "../views/admin/DashboarView.vue";
 import AboutView from "../views/admin/AboutView.vue";
@@ -65,6 +66,11 @@ const routes = [
     path: "/login",
     name: "loginView",
     component: LoginView,
+  },
+  {
+    path: "/register",
+    name: "registerView",
+    component: RegisterView,
   },
 ];
 

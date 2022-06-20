@@ -32,12 +32,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-8">
-              <div class="icheck-primary">
-                <input type="checkbox" id="remember" />
-                <label for="remember"> Remember Me </label>
-              </div>
-            </div>
+            <div class="col-8"></div>
             <!-- /.col -->
             <div class="col-4">
               <button type="submit" class="btn btn-primary btn-block">
@@ -49,6 +44,12 @@
         </form>
 
         <!-- /.social-auth-links -->
+        <br />
+        <p class="mb-0">
+          <router-link to="/register" class="text-center"
+            >I already have a account</router-link
+          >
+        </p>
       </div>
       <!-- /.login-card-body -->
     </div>
