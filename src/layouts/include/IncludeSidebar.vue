@@ -1,13 +1,15 @@
 <template>
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="/admin/index3.html" class="brand-link">
+    <a href="/" class="brand-link">
       <img
         src="/admin/dist/img/AdminLTELogo.png"
-        alt="AdminLTE Logo"
+        :alt="$store.state.app.name"
         class="brand-image img-circle elevation-3"
         style="opacity: 0.8"
       />
-      <span class="brand-text font-weight-light">AdminLTE</span>
+      <span class="brand-text font-weight-light">{{
+        $store.state.app.name
+      }}</span>
     </a>
 
     <div class="sidebar">
@@ -49,6 +51,10 @@
         >
           <NavItem icon="fa fa-home" link="/"> Home </NavItem>
           <NavItem icon="fa fa-info-circle" link="/about"> About </NavItem>
+          <NavItem icon="nav-icon fas fa-edit" link="/posts">Post </NavItem>
+          <NavItem icon="nav-icon fas fa-edit" link="/posts-detail"
+            >Post Detail
+          </NavItem>
         </ul>
       </nav>
     </div>

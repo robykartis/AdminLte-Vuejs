@@ -2,7 +2,9 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    app: "Vue AdminLTE",
+    app:{
+      name: 'Vue AdminLTE'
+    }
   },
   getters: {},
   mutations: {},

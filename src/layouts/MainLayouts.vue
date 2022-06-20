@@ -9,7 +9,9 @@
     <!-- End Sidebar -->
 
     <!-- View Page -->
-    <router-view />
+    <div class="content-wrapper">
+      <router-view />
+    </div>
     <!-- end View Page -->
 
     <include-footer />

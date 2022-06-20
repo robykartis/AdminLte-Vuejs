@@ -1,5 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <content-header title="About" />
 </template>
+
+<script>
+import ContentHeader from "@/components/ContentHeader.vue";
+export default {
+  components: { ContentHeader },
+  name: "AboutView",
+};
+</script>
+
+<style></style>
