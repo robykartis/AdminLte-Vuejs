@@ -1,11 +1,11 @@
 <template>
-  <content-header title="Posts" icon="fas fa-edit" />
+  <content-header title="About" icon="fa fa-info-circle" />
   <content>
     <div class="row">
       <div class="col-12">
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Posts</h3>
+            <h3 class="card-title">About</h3>
           </div>
           <div class="card-body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "PostsIndex",
+  name: "AboutView",
 };
 </script>
 

@@ -1,9 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import MainLayouts from "../layouts/MainLayouts.vue";
+// Auth
+import LoginView from '../views/auth/LoginView.vue'
+// Admin
 import DashboarView from "../views/admin/DashboarView.vue";
+import AboutView from '../views/admin/AboutView.vue'
 import PostsIndex from "../views/admin/post/PostsIndex.vue";
 import PostsDetail from "../views/admin/post/PostsDetail.vue";
+
+
+
+
 const routes = [
   {
     path: "/",
@@ -13,6 +21,11 @@ const routes = [
         path: "",
         name: "dasboard",
         component: DashboarView,
+      },
+      {
+        path: "about",
+        name: "aboutView",
+        component: AboutView,
       },
 
       {
@@ -31,20 +44,25 @@ const routes = [
         name: "home",
         component: HomeView,
       },
+    
+      // {
+      //   path: "about",
+      //   name: "about",
 
-      {
-        path: "about",
-        name: "about",
-
-        component: function () {
-          return import(
-            /* webpackChunkName: "about" */
-            "../views/AboutView.vue"
-          );
-        },
-      },
+      //   component: function () {
+      //     return import(
+      //       /* webpackChunkName: "about" */
+      //       "../views/AboutView.vue"
+      //     );
+      //   },
+      // },
     ],
   },
+  {
+    path:'/login',
+    name: 'login',
+    component: LoginView,
+  }
 ];
 
 const router = createRouter({
